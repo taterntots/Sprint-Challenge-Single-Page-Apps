@@ -1,19 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
+import styled from 'styled-components';
+
+const SearchStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+`
+const InputStyle = styled.input`
+  border-radius: 5px;
+  text-align: center;
+  max-width: 400px;
+`
 
 export default function SearchForm(props) {
- 
   return (
-    <section className="search-form">
-      <form>
-        <input
-          type='text'
-          name='name'
-          placeholder='search by name'
-          autoComplete='off'
-          value={props.input}
-          onChange={props.handleInputChange}
-        />
-      </form>
-    </section>
+    <SearchStyle>
+      <section className="search-form">
+        <form>
+          <InputStyle
+            type='text'
+            name='name'
+            placeholder='search by name'
+            autoComplete='off'
+            value={props.input}
+            onChange={props.handleInputChange}
+          />
+        </form>
+      </section>
+    </SearchStyle>
   );
 }
