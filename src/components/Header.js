@@ -15,7 +15,7 @@ const NavStyle = styled.div`
 export default function Header() {
   return (
     <HeaderStyle>
-      <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
+      <h1 className='ui center'>Rick &amp; Morty Fan Page</h1>
       <NavStyle>
         <Link to='/'>Home</Link>
         <Link to='/characters'>Characters</Link>

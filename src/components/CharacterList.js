@@ -42,7 +42,7 @@ export default function CharacterList() {
   }
 
   return (
-    <section className="character-list">
+    <section className='character-list'>
       <SearchForm handleInputChange={handleInputChange} />
       <GridStyle>
         {characters.map((char, index) => {

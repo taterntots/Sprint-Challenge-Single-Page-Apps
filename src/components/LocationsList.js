@@ -42,7 +42,7 @@ export default function LocationsList() {
   }
 
   return (
-    <section className="location-list">
+    <section className='location-list'>
       <SearchForm handleInputChange={handleInputChange} />
       <GridStyle>
         {locations.map((loc, index) => {

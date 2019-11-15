@@ -15,7 +15,7 @@ const InputStyle = styled.input`
 export default function SearchForm(props) {
   return (
     <SearchStyle>
-      <section className="search-form">
+      <section className='search-form'>
         <form>
           <InputStyle
             type='text'
