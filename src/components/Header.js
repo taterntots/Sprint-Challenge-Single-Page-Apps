@@ -19,6 +19,7 @@ export default function Header() {
       <NavStyle>
         <Link to='/'>Home</Link>
         <Link to='/characters'>Characters</Link>
+        <Link to='/locations'>Locations</Link>
       </NavStyle>
     </HeaderStyle>
   );
