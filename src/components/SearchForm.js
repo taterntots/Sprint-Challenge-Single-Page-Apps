@@ -10,7 +10,8 @@ export default function SearchForm(props) {
           name='name'
           placeholder='search by name'
           autoComplete='off'
-          onChange=''
+          value={props.input}
+          onChange={props.handleInputChange}
         />
       </form>
     </section>
