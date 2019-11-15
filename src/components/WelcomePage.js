@@ -20,7 +20,7 @@ export default function WelcomePage() {
     <section className='welcome-page'>
       <WelcomeStyle>
         <div>
-          <ImageStyle className='main-img' src='https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="rick'/>
+          <ImageStyle className='main-img' src='https://rickandmortyapi.com/api/character/avatar/1.jpeg' alt='rick'/>
         </div>
         <WubbaStyle>
           <h1>Wubba lubba dub dub!</h1>
