@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import SearchForm from './SearchForm';
+import CharacterCard from './CharacterCard';
 
 export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
@@ -32,7 +33,14 @@ export default function CharacterList() {
         <SearchForm handleInputChange={handleInputChange} />
       {characters.map((char, index) => {
         return (
-          <h1>{char.name}</h1>
+          <CharacterCard
+            key={index}
+            name={char.name}
+            gender={char.gender}
+            image={char.image}
+            species={char.species}
+            status={char.status}
+          />
         )
       })}
     </section>
